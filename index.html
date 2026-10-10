@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Addition Program</title>
+</head>
+<body style="font-family: Arial; padding: 20px;">
+    <h2>Addition Program</h2>
+    <label>Enter Number 1:</label><br>
+    <input type="number" id="num1"><br><br>
+    
+    <label>Enter Number 2:</label><br>
+    <input type="number" id="num2"><br><br>
+    
+    <button onclick="addNumbers()">Calculate Sum</button>
+    
+    <h3 id="result"></h3>
+
+    <script>
+        function addNumbers() {
+            let a = parseFloat(document.getElementById('num1').value);
+            let b = parseFloat(document.getElementById('num2').value);
+            let sum = a + b;
+            document.getElementById('result').innerText = "The sum of the Numbers is : " + sum;
+        }
+    </script>
+</body>
+</html>
